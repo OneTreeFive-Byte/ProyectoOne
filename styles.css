@@ -1,0 +1,88 @@
+/* Importar Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Estilos básicos */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: rgb(10, 199, 158);
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: rgb(9, 219, 234);
+    text-decoration: none;
+}
+
+footer {
+    background-color: #333;
+    color: rgb(234, 128, 7);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Fondo para sección home */
+#home {
+    background-image: url('imagen/imagen.jpg'); /* Reemplaza con tu imagen */
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+    color: rgb(236, 87, 7);
+}
+
+.product-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.card {
+    border: 1px solid #f0ec10;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.review {
+    border: 1px solid #f30e0e;
+    padding: 1rem;
+    border-radius: 5px;
+}
+@media (max-width: 768px) {
+    .product-cards, .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    form {
+        padding: 0 1rem;
+    }
+}
